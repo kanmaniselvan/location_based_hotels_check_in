@@ -1,0 +1,196 @@
+//=require ../normalize.css
+//=require ../datepicker.css
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px;
+  font-weight: 400;
+  border: 1px solid black;
+}
+
+.search-and-date-container {
+  width: 100%;
+  background: #003e68;
+  text-align: center;
+  height: 100px;
+  .search-cont {
+    height: 100%;
+    padding-top: 30px;
+    #search-ip {
+      margin-right: 5%;
+      display: inline-block;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      border: 1px solid #C2C2C2;
+      box-shadow: 1px 1px 4px #EBEBEB;
+      -moz-box-shadow: 1px 1px 4px #EBEBEB;
+      -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      padding: 7px;
+      outline: none;
+      width: 210px;
+    }
+    #date-picker {
+      display: inline-block;
+      cursor: pointer;
+      margin-right: 5%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px dashed #83A4C5;
+      width: 100px;
+      outline: none;
+      padding: 0;
+      color: rgba(221, 255, 0, 0.24);
+      font-weight: bold;
+      color: #fff;
+      font-size: 17px;
+
+      .ui-datepicker-prev, .ui-datepicker-next {
+        cursor: pointer;
+      }
+
+      .ui-datepicker-title, .ui-datepicker-prev, .ui-datepicker-next {
+        margin: 20px;
+        font-weight: bold;
+      }
+    }
+
+    .date-picker-label {
+      margin-left: 20%;
+      color: #e3e3e3;
+      text-transform: uppercase;
+    }
+
+    #date-picker:hover {
+      border-bottom: 1px dashed #D9FFA9;
+    }
+
+    #search-btn {
+      display: inline-block;
+    }
+  }
+}
+
+.btn {
+  border: none;
+  padding: 8px 15px 8px 15px;
+  background: #FF8500;
+  color: #fff;
+  box-shadow: 1px 1px 4px #DADADA;
+  -moz-box-shadow: 1px 1px 4px #DADADA;
+  -webkit-box-shadow: 1px 1px 4px #DADADA;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+.bth:hover {
+  background: #EA7B00;
+  color: #fff;
+}
+
+.alert-msg {
+  z-index: 2000;
+  position: fixed;
+  color: #ffffff;
+  box-shadow: 2px 2px 5px #bfbfbf;
+  top: 82px;
+  left: 40%;
+  border-radius: 6px;
+  padding: 10px;
+  width: auto;
+  text-align: center;
+  font-weight: bold;
+}
+.alert-msg.success {
+  background-color: #00a43e;
+}
+
+.alert-msg.loading {
+  background-color: #ffea7d;
+  color: #000000;
+}
+
+.alert-msg.error {
+  background-color: #ee4b4c;
+}
+
+#hotels-list {
+  margin: 20px;
+
+  .hotel-rating {
+    line-height: normal;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 4px 2px 4px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 12px;
+    vertical-align: middle;
+  }
+
+  .high-light {
+    display: inline-block;
+    padding: 0.15em 1em;
+    border: 1px solid #BFBFBF;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    color: #51515a;
+    border-radius: 7px;
+  }
+
+  .hotel-rating.good {
+    background-color: #388e3c;
+  }
+  .hotel-rating.average {
+    background-color: #ffbb15;
+  }
+  .hotel-rating.poor {
+    background-color: #e30f01;
+  }
+
+  ul {
+    list-style-type: none;
+    width: 500px;
+  }
+
+  h3 {
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+  }
+
+  li .hotel-prev {
+    display: inline-block;
+    float: left;
+    margin: 0 15px 0 0;
+  }
+
+  li p {
+    font: 200 12px/1.5 Georgia, Times New Roman, serif;
+  }
+
+  li {
+    padding: 10px;
+    overflow: auto;
+  }
+
+  li:hover {
+    background: #eee;
+  }
+}
+
+.log-out-link {
+  background-color: rgba(255, 97, 79, 0.64);
+  border: medium none;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+  text-decoration: none;
+}

@@ -1,0 +1,64 @@
+<div class="form-box">
+<h2>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</div>
+
+<style type="text/css">
+  body {
+    margin: 0;
+    background-color: #6eafbf;
+  }
+
+  .form-box {
+    margin-top: 14%;
+    height: auto;
+    margin-left: 36%;
+    width: 300px;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: #fbfbfb;
+  }
+
+  .form-box div {
+    margin-bottom: 20px;
+  }
+
+  .form-box .field input {
+    width: 200px;
+    padding: 1px;
+  }
+</style>
+

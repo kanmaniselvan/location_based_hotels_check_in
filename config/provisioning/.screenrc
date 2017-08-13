@@ -1,0 +1,24 @@
+shell -${SHELL}
+
+startup_message off
+chdir
+autodetach on
+#hardstatus alwayslastline
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+
+termcapinfo xterm* ti@:te@
+
+caption always # activates window caption
+caption string '%{= wk}[ %{k}%H %{k}][%= %{= wk}%?%-Lw%?%{r}(%{r}%n*%f%t%?(%u)%?%{r})%{k}%?%+Lw%?%?%= %{k}][%{b} %d/%m %{k}%c %{k}]' # good looking window bar
+
+bindkey -k k5 prev # F5 for previous window
+bindkey -k k6 next # F6 for next window
+
+
+# replace ctrl-A by ctrl-space. One of the following two will work. Depends on OS.
+escape "^  "
+#escape '^@^@'
+
+term xterm-color
+setenv SCREEN_TERM screen
+

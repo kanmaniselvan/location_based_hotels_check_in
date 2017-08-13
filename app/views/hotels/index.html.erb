@@ -1,0 +1,26 @@
+<script type="application/javascript">
+  var search_hotels_url = "<%= search_hotels_url %>";
+  var checkins_url = "<%= checkins_url %>"
+</script>
+
+<%= javascript_include_tag 'hotels/index' %>
+<div class="page-wrap">
+  <div class="search-and-date-container">
+    <div class="search-cont">
+      <input id="search-ip" type="text" placeholder="Search here" value="Hotels near me">
+      <button id="search-btn" class="btn">Search!</button>
+      <label for="date-picker" class="date-picker-label">
+        Checkin date:
+      </label>
+      <input id="date-picker"/>
+
+      <%= link_to 'Log out', '/logout', class: 'log-out-link' %>
+    </div>
+  </div>
+
+  <div class="hotels-list-container">
+    <ul id="hotels-list">
+
+    </ul>
+  </div>
+</div>
