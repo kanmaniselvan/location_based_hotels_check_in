@@ -23,3 +23,10 @@ Start the server and hit localhost:3000
 
 `> whenever` <br>
 `> whenever --update-crontab`
+
+# JSON APIs
+
+1. `<app_domain>/checkins` will list all hotel checkins
+2. `<app_domain>/checkins?arrival_date=<Date>` will list all hotel checkins made on the arrival date
+3. `<app_domain>/checkins?city_name=<city_name>` will list all hotel checkins made in the city
+4. `<app_domain>/<user_id>/checkins` will list all user's hotel checkins
